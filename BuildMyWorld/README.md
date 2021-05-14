@@ -57,7 +57,13 @@ Directory Structure
 - [CMakeLists.txt](/BuildMyWorld/CMakeLists.txt): File to link the C++ code to libraries.  
 
 ## Run the project  
-* Clone this repository
+* Clone this repository and go into Build my world directtory
+```
+git clone https://github.com/sudujr/ROSJects.git
+```
+```
+cd BuildMyWorld
+```
 * At the top level of the project repository, create a build directory:  
 ```bash
 mkdir build && cd build
@@ -68,12 +74,16 @@ cmake .. && make
 ```
 * Export your plugin folder in the terminal so your world file can find it:  
 ```bash
-export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:/home/workspace/RoboND-Term1-P1-Build-My-World/build
+export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:<Path to build file>
+Ex : export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:/home/workspace/ROSjects/BuildMyWorld/build
 ```
 * Launch the world file in Gazebo to load both the world and plugin  
 ```bash
-cd /home/workspace/github/RoboND-Term1-P1-Build-My-World/world/
-gazebo myoffice.world
+cd <path to world> 
+Example : cd /home/workspace/ROSJects/BuildMyWorld/world
+```
+```
+gazebo workspace.world
 ```
 
 ## Tips  
@@ -89,16 +99,16 @@ Please (do your best to) stick to [Google's C++ style guide](https://google.gith
 ## Project Rubric  
 ### 1. Basic Requirements  
 #### 1.1 Does the project include a world directory containing the Gazebo world file, a model directory containing a structure and an object model files, a script directory containing the C++ plugin code, and a CMakeLists.txt file?  
-Yes, it does.  
+- Yes, it does.  
 ### 2. Building  
 #### 2.1 Does the project include a house with walls?  
-Yes, it does.  
+- Yes, it does.  
 ### 3. Modeling  
 #### 3.1 Does the project include an object built using the Model Editor?  
-Yes, it does.  
+- Yes, it does.  
 ### 4. Gazebo World  
 #### 4.1 Does the project contain a Gazebo world with multiple models?  
-Yes, it does.  
+- Yes, it does.  
 ### 5. World Plugin  
 #### 5.1 Does the project contain a C++ world plugin?  
-Yes, it does.  
+- Yes, it does.  
