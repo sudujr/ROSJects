@@ -62,7 +62,7 @@ Directory Structure
 git clone https://github.com/sudujr/ROSJects.git
 ```
 ```
-cd BuildMyWorld
+cd ROSJects/BuildMyWorld/
 ```
 * At the top level of the project repository, create a build directory:  
 ```bash
