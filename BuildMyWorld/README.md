@@ -32,30 +32,27 @@ sudo apt-get update && sudo apt-get upgrade -y
 ## Project Description  
 Directory Structure  
 ```
-.Build-My-World                    # Build My World Project 
-├── model                          # Model files 
-│   ├── gokart
-│   │   ├── model.config
-│   │   ├── model.sdf
-│   ├── myfloorplan
-│   │   ├── model.config
-│   │   ├── model.sdf
-│   ├── robot
-│   │   ├── model.config
-│   │   ├── model.sdf
-├── script                         # Gazebo World plugin C++ script      
-│   ├── welcome.cpp
-├── world                          # Gazebo main World containing models 
-│   ├── myoffice.world
-├── CMakeLists.txt                 # Link libraries 
-└──   
+    .BuildMyWorld                      # Build My World Project 
+    ├── model                          # Model files 
+    │   ├── 4wdamr
+    │   │   ├── 4wdamr.config
+    │   │   ├── 4wdamr.sdf
+    │   ├── office
+    │   │   ├── office.config
+    │   │   ├── office.sdf
+    ├── script                         # Gazebo World plugin C++ script      
+    │   ├── welcome.cpp
+    ├── world                          # Gazebo main World containing models 
+    │   ├── workspace.world
+    ├── CMakeLists.txt                 # Link libraries 
+    └──                              
 ```
-- [myoffice.world](/world/myoffice.world): Gazebo world file that includes the models.  
-- [myfloorplan](/model/myfloorplan): A single floor structure designed in the Building Editor tool of Gazebo.  
-- [gokart](/model/gokart): A go kart designed in the Model Editor tool of Gazebo.  
+- [workspace.world](/world/workspace.world): Gazebo world file that includes the models.  
+- [4wdamr](/model/4wdamr): A 4 Wheeled mobile robot desgined in the Model Editor tool of Gazebo.  
+- [office](/model/office): office designed in the Model Editor tool of Gazebo.  
 - [robot](/model/robot): A robot designed in the Model Editor tool of Gazebo.  
 - [welcome.cpp](/script/welcome.cpp): Gazebo world plugin C++ script.  
-- [Overview.png](/screenshots/Overview.png): A screenshot of the final result.  
+- [Result.png](/Media/Result.png): A screenshot of the final result.  
 - [CMakeLists.txt](CMakeLists.txt): File to link the C++ code to libraries.  
 ## Run the project  
 * Clone this repository
