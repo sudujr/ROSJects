@@ -1,15 +1,15 @@
-# RoboND-Term1-P1-Build-My-World
-Project 1 of Udacity Robotics Software Engineer Nanodegree Program
+# Build My World
+Building physics based simulation world using Gazebo
 
 ![RESULT](/BuildMyWorld/media/result.png)  
 
-## Overview  
-In this project you'll create your simulation world in Gazebo for all your upcoming projects in the [Udacity Robotics Software Engineer Nanodegree Program](https://www.udacity.com/course/robotics-software-engineer--nd209).  
+## Project Rubrics
 1. Build a single floor wall structure using the **Building Editor** tool in Gazebo. Apply at least one feature, one color, and optionally one texture to your structure. Make sure there's enough space between the walls for a robot to navigate.  
 2. Model any object of your choice using the **Model Editor** tool in Gazebo. Your model links should be connected with joints.  
 3. Import your structure and two instances of your model inside an empty **Gazebo World**.  
 4. Import at least one model from the **Gazebo online library** and implement it in your existing Gazebo world.  
 5. Write a C++ **World Plugin** to interact with your world. Your code should display “Welcome to ’s World!” message as soon as you launch the Gazebo world file.  
+
 ## Prerequisites/Dependencies  
 * Gazebo >= 7.0  
 * ROS Kinetic  
@@ -21,6 +21,7 @@ In this project you'll create your simulation world in Gazebo for all your upcom
   * Linux: gcc / g++ is installed by default on most Linux distros
   * Mac: same deal as make - [install Xcode command line tools]((https://developer.apple.com/xcode/features/)
   * Windows: recommend using [MinGW](http://www.mingw.org/)
+
 ## Setup Instructions (abbreviated)  
 1. Meet the `Prerequisites/Dependencies`  
 2. Open Ubuntu Bash and clone the project repository  
@@ -28,7 +29,8 @@ In this project you'll create your simulation world in Gazebo for all your upcom
 ```bash
 sudo apt-get update && sudo apt-get upgrade -y
 ```
-4. Build and run your code.  
+4. Build and run the code.
+  
 ## Project Description  
 Directory Structure  
 ```
@@ -47,13 +49,13 @@ Directory Structure
     ├── CMakeLists.txt                 # Link libraries 
     └──                              
 ```
-- [workspace.world](/world/workspace.world): Gazebo world file that includes the models.  
-- [4wdamr](/model/4wdamr): A 4 Wheeled mobile robot desgined in the Model Editor tool of Gazebo.  
-- [office](/model/office): office designed in the Model Editor tool of Gazebo.  
-- [robot](/model/robot): A robot designed in the Model Editor tool of Gazebo.  
-- [welcome.cpp](/script/welcome.cpp): Gazebo world plugin C++ script.  
-- [Result.png](/Media/Result.png): A screenshot of the final result.  
-- [CMakeLists.txt](CMakeLists.txt): File to link the C++ code to libraries.  
+- [workspace.world](/BuildMyWorld/world/workspace.world): Gazebo world file that includes the models.  
+- [4wdamr](/BuildMyWorld/model/4wdamr): A 4 Wheeled mobile robot desgined in the Model Editor tool of Gazebo.  
+- [office](/BuildMyWorld/model/office): office designed in the Model Editor tool of Gazebo.   
+- [welcome.cpp](/BuildMyWorld/scripts/welcome.cpp): Gazebo world plugin C++ script.  
+- [Result.png](/BuildMyWorld/Media/Result.png): A screenshot of the final result.  
+- [CMakeLists.txt](/BuildMyWorld/CMakeLists.txt): File to link the C++ code to libraries.  
+
 ## Run the project  
 * Clone this repository
 * At the top level of the project repository, create a build directory:  
