@@ -3,7 +3,7 @@ Building physics based simulation world using Gazebo
 
 ![RESULT](/BuildMyWorld/media/result.png)  
 
-## Project Rubrics
+## Project Rubric
 1. Build a single floor wall structure using the **Building Editor** tool in Gazebo. Apply at least one feature, one color, and optionally one texture to your structure. Make sure there's enough space between the walls for a robot to navigate.  
 2. Model any object of your choice using the **Model Editor** tool in Gazebo. Your model links should be connected with joints.  
 3. Import your structure and two instances of your model inside an empty **Gazebo World**.  
